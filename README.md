@@ -1,8 +1,8 @@
 <b>Ethererum and Ethereum Classic token price ticker</b></br>
 Chrome web store link:
-https://chrome.google.com/webstore/detail/thedao-token-price-ticker/noncfbjpmpnolholdlloniagefildabj
+https://chrome.google.com/webstore/detail/ethereum-and-ethereum-cla/hhbaknedgnnamobhnfdomcmdabhhbkbk
 
-![Ethererum and Ethereum Classic token price ticker - screenshot](https://raw.githubusercontent.com/johnerfx/Ethers-price-ticker/master/screenshot.png)
+![Ethererum and Ethereum Classic token price ticker - screenshot](https://raw.githubusercontent.com/johnerfx/Ethers-price-ticker/master/screenshot1280.png)
 
 This extension shows Ethereum(blue) and Ethereum Classic(green) values priced in cryptocurrencies and USD along with the summary(red) of them.</br>
 Values are refreshed every 4 minutes.</br>
