@@ -10,13 +10,15 @@ function checkTicker() {
 				var eth_btc=jsonresponse[i]['price_btc'];
 				var eth_usd=jsonresponse[i]['price_usd'];
 				var eth_percent24h=jsonresponse[i]['percent_change_24h'];
-        var eth_marketcap=jsonresponse[i]['market_cap_usd'];
+				var eth_marketcap=jsonresponse[i]['market_cap_usd'];
+				var eth_volume=jsonresponse[i]['24h_volume_usd'];
 			}
 			else if (jsonresponse[i]['id']=='ethereum-classic') {
-        var etc_btc=jsonresponse[i]['price_btc'];
+				var etc_btc=jsonresponse[i]['price_btc'];
 				var etc_usd=jsonresponse[i]['price_usd'];
 				var etc_percent24h=jsonresponse[i]['percent_change_24h'];
-        var etc_marketcap=jsonresponse[i]['market_cap_usd'];
+				var etc_marketcap=jsonresponse[i]['market_cap_usd'];
+				var etc_volume=jsonresponse[i]['24h_volume_usd'];
 			}
 		}
     var sum_usd = eth_usd+etc_usd;
@@ -26,14 +28,17 @@ function checkTicker() {
 		lines.push("ETHUSD "+eth_usd.toFixed(4).toString()+"$\n");
 		lines.push("ETCUSD "+etc_usd.toFixed(4).toString()+"$\n");
 		lines.push("USD sum "+sum_usd.toFixed(4).toString()+"$\n");
-    lines.push("\n");
+		lines.push("\n");
 		lines.push("ETHBTC "+eth_btc.toFixed(8).toString()+"BTC\n");
 		lines.push("ETCBTC "+etc_btc.toFixed(8).toString()+"BTC\n");
 		lines.push("USD sum "+sum_btc.toFixed(8).toString()+"BTC\n");
 		lines.push("\n");
-    lines.push("ETH Marketcap "+eth_marketcap.toLocaleString(window.navigator.language,{ style: 'currency', currency: 'USD'})+"\n");
+		lines.push("ETH Marketcap "+eth_marketcap.toLocaleString(window.navigator.language,{ style: 'currency', currency: 'USD'})+"\n");
 		lines.push("ETC Marketcap "+etc_marketcap.toLocaleString(window.navigator.language,{ style: 'currency', currency: 'USD'})+"\n");
-		lines.push("\n");    
+		lines.push("\n");
+		lines.push("ETH Volume 24h "+eth_volume.toLocaleString(window.navigator.language,{ style: 'currency', currency: 'USD'})+"\n");
+		lines.push("ETC Volume 24h "+etc_volume.toLocaleString(window.navigator.language,{ style: 'currency', currency: 'USD'})+"\n");
+		lines.push("\n");		
 		lines.push("ETCETH="+eth_etc.toFixed(8).toString()+"ETH\n");
 		lines.push("ETCETH="+(eth_etc*100).toFixed(2)+"%\n");
 		lines.push("\n");
