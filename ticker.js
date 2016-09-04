@@ -7,15 +7,15 @@ function checkTicker() {
     jsonresponse=JSON.parse(ticker.responseText);
 		for (i=0;i<jsonresponse.length;i++) {
 			if (jsonresponse[i]['id']=='ethereum') {
-				var eth_btc=jsonresponse[i]['price_btc'];
-				var eth_usd=jsonresponse[i]['price_usd'];
+				var eth_btc=parseFloat(jsonresponse[i]['price_btc']);
+				var eth_usd=parseFloat(jsonresponse[i]['price_usd']);
 				var eth_percent24h=jsonresponse[i]['percent_change_24h'];
 				var eth_marketcap=jsonresponse[i]['market_cap_usd'];
 				var eth_volume=jsonresponse[i]['24h_volume_usd'];
 			}
 			else if (jsonresponse[i]['id']=='ethereum-classic') {
-				var etc_btc=jsonresponse[i]['price_btc'];
-				var etc_usd=jsonresponse[i]['price_usd'];
+				var etc_btc=parseFloat(jsonresponse[i]['price_btc']);
+				var etc_usd=parseFloat(jsonresponse[i]['price_usd']);
 				var etc_percent24h=jsonresponse[i]['percent_change_24h'];
 				var etc_marketcap=jsonresponse[i]['market_cap_usd'];
 				var etc_volume=jsonresponse[i]['24h_volume_usd'];

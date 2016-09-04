@@ -12,5 +12,5 @@ No special permissions are needed to install this extension.
 </br></br>
 Tips appreciated:</br>
 ETH/ETC: 0x12e44b30be9929CfD223c06c5B8F9405f303C00d </br>
-BTC: 1Cf4rZcqhedQhNuRZQQKhn1cv9mTxj1K6Z </br>
+BTC: 15BN5GDMNbwrAGk9Pb2ddE2A2HZR1yCNSY </br>
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/johnerfx/Ethers-price-ticker/blob/master/LICENSE)
