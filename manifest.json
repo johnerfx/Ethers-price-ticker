@@ -15,5 +15,8 @@
    "name": "Ethereum and Etherum Classic price ticker",
    "short_name": "Ethereum and Etherum Classic price ticker",
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "0.9.4"
+   "version": "0.9.5",
+    "permissions": [
+    "https://api.coinmarketcap.com/"
+  ]
 }
